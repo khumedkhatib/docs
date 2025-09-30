@@ -1,0 +1,1 @@
+{"name": "my-blog", "version": "1.0.0", "description": "A beautiful personal blog website", "main": "index.html", "scripts": {"start": "python3 -m http.server 8000", "dev": "python3 -m http.server 3000"}, "keywords": ["blog", "website", "personal"], "author": "Blog Owner", "license": "MIT"}
