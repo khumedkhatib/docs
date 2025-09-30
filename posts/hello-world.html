@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world! • My Blog</title>
+    <meta name="description" content="Why I started this blog, and what to expect next.">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/">My Blog</a>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/posts/">Posts</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container content">
+        <article>
+            <header class="post-header">
+                <h1 class="post-title">Hello, world! Why I started this blog</h1>
+                <div class="post-meta">
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                    <span>• 3 min read</span>
+                </div>
+            </header>
+            <div class="prose">
+                <p>Welcome! I finally decided to start writing publicly. Expect short, useful posts about software engineering, design systems, and mindful productivity. I’ll share things I learn, problems I run into, and solutions that worked for me.</p>
+                <p>Here’s roughly what I plan to cover:</p>
+                <ul>
+                    <li>Guides and checklists I wish I had when starting something new</li>
+                    <li>Deep dives into tools and techniques that improved my workflow</li>
+                    <li>Notes and snippets I frequently copy-paste into projects</li>
+                </ul>
+                <p>This site is intentionally simple: plain HTML, CSS, and a sprinkle of JavaScript. It’s fast, accessible, and deploys anywhere. I might move to a generator later, but for now, simplicity wins.</p>
+                <p>If you want me to write about something specific, <a href="/contact.html">reach out</a> — I read everything.</p>
+            </div>
+        </article>
+        <p><a href="/posts/">← All posts</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> My Blog. All rights reserved.</p>
+            <p><a href="/feed.xml">RSS</a></p>
+        </div>
+    </footer>
+    <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
+
