@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>My Blog</title>
+    <link>https://example.com/</link>
+    <description>Thoughts, tutorials, and notes.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Hello, world! Why I started this blog</title>
+      <link>https://example.com/posts/hello-world.html</link>
+      <guid isPermaLink="true">https://example.com/posts/hello-world.html</guid>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <description>Kicking things off with my goals, the stack behind this site, and what to expect next.</description>
+    </item>
+  </channel>
+</rss>
+

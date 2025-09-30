@@ -1,34 +1,51 @@
-# Mintlify Starter Kit
+# My Blog (Static Site)
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+A simple, fast, accessible static blog built with plain HTML, CSS, and a touch of JavaScript.
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
-
-### 👩‍💻 Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## Structure
 
 ```
-npm i -g mintlify
+/
+├─ index.html            # Home with latest posts
+├─ about.html            # About page
+├─ contact.html          # Contact page
+├─ posts/
+│  ├─ index.html         # All posts index
+│  └─ hello-world.html   # Sample post
+├─ assets/
+│  ├─ css/
+│  │  └─ styles.css
+│  └─ js/
+│     └─ main.js
+└─ feed.xml              # Basic RSS feed
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+## Local preview
 
+Use any static file server. For example, with Python 3:
+
+```bash
+cd /workspace
+python3 -m http.server 8080
 ```
-mintlify dev
-```
 
-### 😎 Publishing Changes
+Then open `http://localhost:8080`.
 
-Changes will be deployed to production automatically after pushing to the default branch.
+## Deployment
 
-You can also preview changes using PRs, which generates a preview link of the docs.
+Host on any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages, S3 + CloudFront, etc.).
 
-#### Troubleshooting
+- GitHub Pages: push to a `gh-pages` branch or enable Pages on `main` with root.
+- Vercel/Netlify: import the repo, set build = none, output = `/`.
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## Customization
+
+- Search for "My Blog" and update the site name.
+- Update `feed.xml` `<link>` and item links to your domain.
+- Replace contact info in `contact.html`.
+- Add new posts under `/posts/your-post.html` and link them from `/posts/index.html` and the home page list.
+
+## Notes
+
+- This is intentionally framework-free to keep things portable and snappy.
+- You can later migrate to a generator (Jekyll, Eleventy, Astro, Next.js) keeping the same IA.
